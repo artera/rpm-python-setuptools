@@ -8,7 +8,7 @@
 
 Name:           %{python}-%{srcname}
 Version:        36.6.0
-Release:        3.ius%{?dist}
+Release:        4.ius%{?dist}
 Summary:        Easily build and distribute Python packages
 Vendor:         IUS Community Project
 Group:          Applications/System
@@ -18,7 +18,7 @@ Source0:        https://files.pythonhosted.org/packages/source/s/%{srcname}/%{sr
 BuildArch:      noarch
 BuildRequires:  %{python}-devel
 Requires:       %{python}
-Provides:       python2-setuptoos = %{version}-%{release}
+Provides:       python2-setuptools = %{version}-%{release}
 # Keep the python-distribute name active for a few releases.  Eventually we'll
 # want to get rid of the Provides and just keep the Obsoletes
 Provides:       %{python}-distribute = %{version}-%{release}
